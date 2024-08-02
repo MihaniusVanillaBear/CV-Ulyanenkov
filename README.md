@@ -1,2 +1,1 @@
-# ulyanenkov.github.io
-В меню слева выбираем раздел Pages. Затем переходим к пункту Branch и меняем значение None на Main — это значит, что сайт будет собираться из главной ветки репозитория. После этого нажмите Save и подождите пару минут — когда GitHub сформирует сайт, наверху появится ссылка:
+# [ulyanenkov.github.io](https://mihaniusvanillabear.github.io/CV-Ulyanenkov/)
