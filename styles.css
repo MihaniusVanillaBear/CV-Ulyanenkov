@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background: #D8E3AB url(logo.jpg) no-repeat 5% 50%
 }
 
 header {
@@ -11,7 +12,6 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-    background: #D8E3AB url(logo.jpg) no-repeat 5% 50%
 }
 
 nav {
@@ -19,6 +19,7 @@ nav {
     color: #fff;
     padding: 0.5rem 0;
     text-align: center;
+    background: #D8E3AB url(logo.jpg) no-repeat 5% 50%
 }
 
 nav ul {
