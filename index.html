@@ -1,75 +1,195 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ульяненков Михаил Игоревич - Руководитель проектов IT</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Михаил Ульяненков — Product Owner & Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Ульяненков Михаил Игоревич</h1>
-        <p>Руководитель проектов IT</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#experience">Опыт работы</a></li>
-            <li><a href="#education">Образование</a></li>
-            <li><a href="#skills">Навыки</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-        <h2>Обо мне</h2>
-        <p> 
-            <li>Экстраверт с техническим складом ума, здоровым перфекционизмом и целеустремленностью.</li>
-            <li>Обладаю навыками управления проектами, успешно реализовал множество проектов, направленных на улучшение процессов и повышение эффективности.</li>
-            <li>Люблю работать в команде и быстро обучаюсь новому. Умею быстро вникать в процессы и находить оптимальные решения.</li>
-            <li>Владею навыками программирования и Agile-методологий.</li>
-            <li>Умею сохранять самообладание в стрессовых ситуациях, находить нестандартные решения и эффективно взаимодействовать со всеми заинтересованными сторонами.</li>
+
+  <!-- Background Ambient Glow -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-content">
+      <a href="#" class="nav-logo">Mikhail Ulyanenkov<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#about">Экспертиза</a>
+        <a href="#metrics">Метрики</a>
+        <a href="#experience">Опыт</a>
+        <a href="#ai-projects">AI Проекты</a>
+        <a href="#contacts" class="nav-cta">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- Hero Section (Bento Editorial Style) -->
+    <section class="hero-section">
+      <div class="hero-main-card">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Open for Product Owner / PM Roles
+        </div>
+        <h1>Product Manager <br/><span class="text-gradient">& Delivery Lead</span></h1>
+        <p class="hero-desc">
+          Специализируюсь на росте продуктовых метрик (CR, CSI, MAU) и построении прозрачного процесса поставки ценности в E-commerce, Telecom и Retail (Yota, Fix Price). Сочетаю сильный бизнес-фокус с глубоким инженерным бэкграундом.
         </p>
+        <div class="hero-buttons">
+          <a href="https://t.me/Mihanius_VanillaBear" target="_blank" class="btn btn-primary">
+            <i class="fa-brands fa-telegram"></i> Telegram
+          </a>
+          <a href="mailto:mike5997@yandex.ru" class="btn btn-secondary">
+            <i class="fa-regular fa-envelope"></i> mike5997@yandex.ru
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo-card">
+        <!-- Положи свою фотографию в корень проекта и назови photo.jpg -->
+        <img src="photo.jpg" alt="Михаил Ульяненков" class="profile-photo">
+        <div class="photo-overlay-badge">
+          <i class="fa-solid fa-code-branch"></i> 7+ лет в IT & Tech
+        </div>
+      </div>
     </section>
-    <section id="experience">
+
+    <!-- Bento Metrics Grid -->
+    <section id="metrics" class="section">
+      <div class="section-header">
+        <h2>Impact & Metrics</h2>
+        <p>Ключевые достижения, подтвержденные цифрами</p>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card span-2">
+          <div class="metric-big">+33%</div>
+          <h3>Рост конверсии в целевое действие</h3>
+          <p>Запуск умного поиска на сайте и в приложениях (Android, iOS) на основе глубокого анализа воронки в Fix Price[cite: 15].</p>
+        </div>
+
+        <div class="bento-card">
+          <div class="metric-big">100k+</div>
+          <h3>MAU за первый месяц</h3>
+          <p>Восстановление переводов в Личном Кабинете Yota с миллионным оборотом[cite: 14].</p>
+        </div>
+
+        <div class="bento-card">
+          <div class="metric-big">-89.8%</div>
+          <h3>Снижение ошибок</h3>
+          <p>Техническая стабилизация платформ и рефакторинг мобильных приложений Yota (веб, iOS, Android)[cite: 14].</p>
+        </div>
+
+        <div class="bento-card span-2">
+          <div class="metric-big">-40%</div>
+          <h3>Сокращение Time-to-Market</h3>
+          <p>Внедрение «Конструктора страниц» в Fix Price для автономной работы с контентом без привлечения разработки[cite: 15].</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="section">
+      <div class="section-header">
         <h2>Опыт работы</h2>
-        <h3>FIX PRICE (сентябрь 2023 — настоящее время)</h3>
-        <p>Руководитель IT проектов. Управление проектами по различным направлениям (мобильное приложение, веб-сайт). Разработка планов проектов, определение требований и приоритетов. Минимизация рисков и техническая поддержка. Управление Scrum-командой и координация межфункциональных команд. Реализация проектов по созданию "Конструктора страниц", разработка лендингов через CMS Bitrix, интеграция авторизации пользователей и умного поиска.</p>
-        
-        <h3>ООО Апиценна (сентябрь 2021 — сентябрь 2023)</h3>
-        <p>Специалист по валидации. Организация процесса валидации и квалификации оборудования. Подготовка документации, проведение функциональных тестов и переговоры с заказчиками.</p>
+        <p>Enterprise & E-commerce проекты</p>
+      </div>
 
-        <h3>UNITESS (май 2020 — август 2021)</h3>
-        <p>Инженер-программист. Автоматизация процессов поверки и калибровки оборудования. Разработка скриптов и драйверов, обучение новых сотрудников.</p>
+      <div class="experience-list">
+        <!-- Yota -->
+        <div class="exp-card">
+          <div class="exp-meta">
+            <span class="company">Yota</span>
+            <span class="period">Июнь 2025 — Июль 2026</span>
+          </div>
+          <h3>Delivery Manager (Web & Mobile)</h3>
+          <ul class="exp-bullets">
+            <li><strong>Cycle Time -20%:</strong> Внедрил WIP-лимиты и систематизировал груминги бэклога в кросс-функциональной команде (15+ человек)[cite: 14].</li>
+            <li><strong>Стабилизация и CSI:</strong> Снизил критические ошибки на 89.8% (веб) и до 83%+ (iOS), подняв CSI категории «Качество приложения» на 16 п.п.[cite: 14].</li>
+            <li><strong>Продуктовый вклад:</strong> Декомпозировал цели CPO в MVP, обеспечив запуск переводов с MAU 100k+ в первый месяц и рост выручки[cite: 14].</li>
+            <li><strong>Оптимизация воронки:</strong> Довёл Conversion Rate сценария «Досписание» до 68.7% (выбор метода вырос в 10 раз по сравнению с СБП)[cite: 14].</li>
+          </ul>
+        </div>
 
-        <h3>АО «ФЦНИВТ «СНПО «Элерон» (июнь 2019 — март 2020)</h3>
-        <p>Инженер. Программирование микроконтроллеров, отладка и ревью кода.</p>
+        <!-- Fix Price -->
+        <div class="exp-card">
+          <div class="exp-meta">
+            <span class="company">FIX PRICE</span>
+            <span class="period">Сентябрь 2023 — Июнь 2025</span>
+          </div>
+          <h3>Product Owner</h3>
+          <ul class="exp-bullets">
+            <li><strong>Поиск и конверсия:</strong> Увеличил CR на 33% и CSAT на 20% благодаря внедрению умного поиска и анализу воронок[cite: 15].</li>
+            <li><strong>Процессы:</strong> Сократил time-to-market на 40% через «Конструктор страниц»[cite: 15].</li>
+            <li><strong>Экономия:</strong> Снизил затраты на SMS-авторизацию на 35% за счет внешних экосистем[cite: 15].</li>
+            <li><strong>Приоритизация:</strong> Вел RICE-приоритизацию бэклога, защищал Gantt-планы перед руководством и тестировал гипотезы через A/B тесты[cite: 15].</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <h3>ООО «Пегас – авиационные компоненты и системы» (октябрь 2018 — май 2019)</h3>
-        <p>Инженер-конструктор 3 категории БКС. Проектирование чертежей бортовой кабельной системы, разработка скриптов для САПР E3.Series.</p>
+    <!-- AI & Tech Pet Projects -->
+    <section id="ai-projects" class="section">
+      <div class="section-header">
+        <h2>AI / LLM Pet-Проекты</h2>
+        <p>Практический опыт разработки от прототипа до рабочего сервиса</p>
+      </div>
+
+      <div class="ai-grid">
+        <div class="ai-card">
+          <div class="ai-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Local AI Agent</h3>
+          <p>Разработка локального агента на Python и LLM API для автоматизации рутинных аналитических и продуктовых задач[cite: 17].</p>
+          <div class="tech-tags"><span>Python</span><span>LLM API</span><span>Automation</span></div>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-icon"><i class="fa-solid fa-route"></i></div>
+          <h3>Orchestrator Agent</h3>
+          <p>Создание агента-оркестратора на базе OpenRouter для динамической маршрутизации запросов между несколькими LLM[cite: 17].</p>
+          <div class="tech-tags"><span>OpenRouter</span><span>Architecture</span><span>LLM</span></div>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-icon"><i class="fa-brands fa-chrome"></i></div>
+          <h3>Chrome Extension + FastAPI</h3>
+          <p>Спроектировал и реализовал расширение для браузера с бэкендом на FastAPI, автоматизирующее суммаризацию веб-страниц с Claude и Gemini[cite: 17].</p>
+          <div class="tech-tags"><span>FastAPI</span><span>Chrome Ext</span><span>Claude/Gemini</span></div>
+        </div>
+      </div>
     </section>
-    <section id="education">
-        <h2>Образование</h2>
-        <p>Магистр, Московский энергетический институт (Национальный исследовательский университет), 2020</p>
-        <p>Курсы:</p>
-        <ul>
-            <li>Системный аналитик: расширенный курс, 2025 (Нетология)</li>
-            <li>Системный аналитик: первые шаги к профессии, 2024 (Нетология)</li>
-            <li>Эффективный руководитель, 2024 (CID-Centre of Integrational Development)</li>
-        </ul>
-    </section>
-    <section id="skills">
-        <h2>Навыки</h2>
-        <ul>
-            <li>Программирование: C/C++, Python, C#</li>
-            <li>Инструменты: Adobe Photoshop, Atlassian Jira, Bitbucket, Atlassian Confluence, Figma, SQL, PostgreSQL, Miro</li>
-            <li>Управление: Agile, Scrum, управление рисками, системный анализ, ведение переговоров</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Контактная информация</h2>
-        <p>Телефон: +7 (962) 9342455</p>
-        <p>Email: mihail.ulyanenkov@yandex.ru</p>
-        <p>Telegram: <a href="https://t.me/MihaniusVanillaBear">MihaniusVanillaBear</a></p>
-    </section>
+
+  </main>
+
+  <!-- Footer / Contacts -->
+  <footer id="contacts" class="footer">
+    <div class="container footer-container">
+      <h2>Давайте создавать ценность вместе.</h2>
+      <p>Открыт к предложениям на позиции Product Owner / Product Manager.</p>
+      <div class="footer-contacts">
+        <a href="https://t.me/Mihanius_VanillaBear" target="_blank" class="contact-pill">
+          <i class="fa-brands fa-telegram"></i> @Mihanius_VanillaBear
+        </a>
+        <a href="mailto:mike5997@yandex.ru" class="contact-pill">
+          <i class="fa-regular fa-envelope"></i> mike5997@yandex.ru
+        </a>
+      </div>
+      <div class="copyright">
+        © 2026 Михаил Ульяненков. Crafted with minimalist precision.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
