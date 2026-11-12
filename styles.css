@@ -463,27 +463,8 @@ h1 {
   font-size: 0.85rem;
   border-top: 1px solid var(--border-color);
 }
-/* Анимации появление при скролле */
-.reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), 
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), 
-              border-color 0.2s ease;
-}
 
-.reveal-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 3D эффект на фото */
-.hero-photo-wrapper {
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  will-change: transform;
-}
-
-/* Spotlight Effect */
+/* 3D Tilt Effect */
 .exp-card, .skill-card, .project-card, .stat-card {
   position: relative;
   overflow: hidden;
