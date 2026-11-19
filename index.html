@@ -1,254 +1,309 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Михаил Ульяненков — Product Owner & Product Manager</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Google Fonts -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Михаил Ульяненков — Delivery Manager и Product Owner</title>
+  <meta name="description" content="Delivery Manager и Product Owner в телекоме и e-commerce: поток поставки, продуктовые метрики, запуски с измеримым результатом. Yota, Fix Price.">
+  <meta name="theme-color" content="#E9EBEC">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Михаил Ульяненков — Delivery Manager и Product Owner">
+  <meta property="og:description" content="Восемь лет в IT, пять из них — продукт и доставка. Метрики, запуски, поток.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2310171C'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%230F6A62'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- FontAwesome -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Top Navigation Bar -->
-  <header class="navbar">
-    <div class="nav-content">
-      <a href="#" class="nav-logo">Mikhail Ulyanenkov<span>.</span></a>
-      <nav class="nav-links">
-        <a href="#about">Обо мне</a>
-        <a href="#metrics">Метрики</a>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="wordmark" href="#top"><span class="wordmark-full">Михаил </span>Ульяненков</a>
+      <nav class="nav" aria-label="Разделы">
         <a href="#experience">Опыт</a>
         <a href="#skills">Навыки</a>
-        <a href="#projects">AI-Проекты</a>
-        <a href="#contact" class="nav-cta">Связаться</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Container -->
-  <main class="container">
+  <main id="main">
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="pulse-dot"></span> Open for Product Owner / PM Roles
-        </div>
-        <h1>Привет, я Михаил.<br/><span class="text-gradient">Product Manager & Product Owner</span></h1>
-        <p class="hero-desc">
-          Специализируюсь на росте продуктовых метрик (CR, CSI, MAU), построении процессов поставки ценности и запуске ключевых продуктов в E-commerce, Telecom и Retail (Yota, Fix Price). Сочетаю сильный бизнес-фокус с техническим бэкграундом.
+    <section class="hero wrap" id="top">
+      <div class="hero-lead">
+        <h1>Михаил<br>Ульяненков</h1>
+        <p class="hero-role">Delivery Manager и Product Owner</p>
+        <p class="hero-summary">
+          Восемь лет в IT, пять из них — на стыке продукта и доставки. Собираю требования,
+          приоритизирую бэклог, снимаю зависимости между командами и довожу до релиза;
+          отвечаю за результат в метриках. Телеком, e-commerce, ритейл.
         </p>
-        <div class="hero-buttons">
-          <a href="https://t.me/MihaniusVanillaBear" target="_blank" class="btn btn-primary">
-            <i class="fa-brands fa-telegram"></i> Telegram
-          </a>
-          <a href="mailto:mike5997@yandex.ru" class="btn btn-secondary">
-            <i class="fa-regular fa-envelope"></i> mike5997@yandex.ru
-          </a>
+        <div class="hero-actions">
+          <a class="action" href="https://t.me/MihaniusVanillaBear" target="_blank" rel="noopener">Telegram</a>
+          <a class="action action-quiet" href="mailto:mike5997@yandex.ru">mike5997@yandex.ru</a>
         </div>
       </div>
 
-      <div class="hero-photo-wrapper">
-        <img src="photo.png" alt="Михаил Ульяненков" class="profile-photo">
-      </div>
+      <figure class="portrait">
+        <img src="photo.jpg" alt="Михаил Ульяненков" width="750" height="1262">
+        <figcaption>Москва · открыт к предложениям</figcaption>
+      </figure>
     </section>
 
-    <!-- Key Metrics / Stats Grid -->
-    <section id="metrics" class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-number">7 лет 9 месяцев</div>
-        <div class="stat-label">Опыта в IT & Product</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">+33%</div>
-        <div class="stat-label">Рост CR в Fix Price</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">100k+</div>
-        <div class="stat-label">MAU запуск в Yota</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">-40%</div>
-        <div class="stat-label">Time-to-Market</div>
-      </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="section">
-      <h2 class="section-title">Обо мне</h2>
-      <p class="section-subtitle">Профессиональный профиль и экспертиза</p>
-      
-      <div class="exp-card">
-        <p class="section-text">
-          Управляю полным жизненным циклом цифровых продуктов, выстраивая прозрачную продуктовую аналитику и процессы разработки. Имею успешный опыт работы в крупном Enterprise и ритейле (Yota, Fix Price). Фокусируюсь на проверке гипотез через A/B-тесты, приоритизации бэклога по RICE, оптимизации воронок и снижении когнитивной нагрузки на пользователей. Владею инструментами системного анализа (SQL, REST API, Swagger) и активно применяю AI-агентов для автоматизации рабочих процессов.
-        </p>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-      <h2 class="section-title">Опыт работы</h2>
-      <p class="section-subtitle">Ключевые позиции и подтвержденные результаты</p>
-
-      <div class="experience-list">
-        <!-- Yota -->
-        <div class="exp-card">
-          <div class="exp-header">
-            <div class="exp-company-role">
-              <h3>Delivery Manager (Web & Mobile)</h3>
-              <div class="company">Yota</div>
-            </div>
-            <div class="exp-period">Июнь 2025 — Июль 2026</div>
-          </div>
-          <ul class="exp-bullets">
-            <li><strong>Оптимизация Delivery Flow:</strong> Снизил Cycle Time на 20% за счет внедрения WIP-лимитов на этапах разработки/тестирования, декомпозиции задач, устранения межкомандных зависимостей и систематизации грумингов бэклога в кросс-функциональной команде (15+ человек).</li>
-            <li><strong>Стабилизация качества:</strong> Снизил количество критических ошибок на 89.8% в вебе, 70% на Android и более чем на 83% на iOS, координируя стабилизацию приложений и технические улучшения.</li>
-            <li><strong>Рост CSI приложения:</strong> Повысил CSI категории «Качество приложения» на 16 п. п., до 47.3%, координируя работу над стабильностью и качеством цифрового продукта.</li>
-            <li><strong>Запуск переводов:</strong> Обеспечил запуск сценария переводов с MAU более 100 тыс. за первый месяц; функция обеспечила многомиллионный оборот и рост комиссионной выручки.</li>
-            <li><strong>Конверсия платежей:</strong> Довёл конверсию сценария «Досписание» до 68.7%; новый способ оплаты выбирали в 10 раз чаще, чем СБП.</li>
-            <li><strong>Метрики CSI оплаты:</strong> Повысил CSI категории «Оплата и переводы» на 28.7 п.п. (до 66.6%), разработав совместно с дизайном интерактивный онбординг (Stories) и триггерные опросы.</li>
-          </ul>
+    <section class="wrap" aria-label="Ключевые результаты">
+      <div class="readouts">
+        <div class="readout">
+          <b>−20%</b>
+          <span>Cycle Time команды в Yota</span>
         </div>
-
-        <!-- Fix Price -->
-        <div class="exp-card">
-          <div class="exp-header">
-            <div class="exp-company-role">
-              <h3>Product Owner</h3>
-              <div class="company">Fix Price</div>
-            </div>
-            <div class="exp-period">Сентябрь 2023 — Июнь 2025</div>
-          </div>
-          <ul class="exp-bullets">
-            <li><strong>Рост конверсии:</strong> Увеличил CR в целевое действие на 33% и CSAT на 20%, запустив умный поиск на сайте и в приложениях на основе анализа воронок продаж и проблемных зон.</li>
-            <li><strong>Time-to-Market:</strong> Сократил time-to-market на 40%, внедрив «Конструктор страниц» для автономной работы с сайтом без отвлечения разработки.</li>
-            <li><strong>Юнит-экономика:</strong> Снизил затраты на SMS-авторизацию на 35% благодаря интеграции входа через внешние экосистемы.</li>
-            <li><strong>Discovery & Prioritization:</strong> Проверял продуктовые гипотезы через A/B-тесты, приоритизировал бэклог по RICE и управлял Gantt-планами.</li>
-          </ul>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <h2 class="section-title">Навыки и компетенции</h2>
-      <p class="section-subtitle">Инструменты и методологии</p>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h4>Product Management</h4>
-          <div class="tag-cloud">
-            <span class="tag">Product Discovery</span>
-            <span class="tag">A/B тесты</span>
-            <span class="tag">RICE</span>
-            <span class="tag">Roadmap</span>
-            <span class="tag">CJM</span>
-            <span class="tag">MVP</span>
-            <span class="tag">User Story</span>
-          </div>
+        <div class="readout">
+          <b>100 тыс.+</b>
+          <span>MAU переводов за первый месяц</span>
         </div>
-
-        <div class="skill-card">
-          <h4>Метрики & Аналитика</h4>
-          <div class="tag-cloud">
-            <span class="tag">Продуктовые метрики</span>
-            <span class="tag">Яндекс.Метрика</span>
-            <span class="tag">AppMetrica</span>
-            <span class="tag">SQL</span>
-          </div>
+        <div class="readout">
+          <b>68,7%</b>
+          <span>конверсия сценария «Досписание»</span>
         </div>
-
-        <div class="skill-card">
-          <h4>Процессы & Delivery</h4>
-          <div class="tag-cloud">
-            <span class="tag">Agile / Scrum / Kanban</span>
-            <span class="tag">Jira</span>
-            <span class="tag">Confluence</span>
-            <span class="tag">Gantt</span>
-            <span class="tag">Управление командой</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h4>Технические навыки</h4>
-          <div class="tag-cloud">
-            <span class="tag">REST API</span>
-            <span class="tag">Swagger</span>
-            <span class="tag">Python</span>
-            <span class="tag">Git</span>
-            <span class="tag">Figma</span>
-            <span class="tag">CI/CD</span>
-          </div>
+        <div class="readout">
+          <b>+28,7 п.п.</b>
+          <span>CSI «Оплата и переводы»</span>
         </div>
       </div>
     </section>
 
-    <!-- AI / LLM Pet Projects -->
-    <section id="projects" class="section">
-      <h2 class="section-title">AI / LLM Pet-Проекты</h2>
-      <p class="section-subtitle">Практическая разработка и автоматизация</p>
+    <section class="wrap flow-block" aria-labelledby="flow-title">
+      <h2 class="flow-title" id="flow-title">Как я веду поток</h2>
+      <ol class="flow-track">
+        <li class="flow-step">
+          <p class="flow-step-title">Запрос бизнеса</p>
+          <span class="flow-rail" aria-hidden="true"><span class="flow-dot"></span></span>
+          <p class="flow-note">ограничения, критерии успеха, цена ошибки</p>
+        </li>
+        <li class="flow-step">
+          <p class="flow-step-title">Discovery</p>
+          <span class="flow-rail" aria-hidden="true"><span class="flow-dot"></span></span>
+          <p class="flow-note">гипотезы, A/B-тесты, воронки</p>
+        </li>
+        <li class="flow-step">
+          <p class="flow-step-title">Бэклог</p>
+          <span class="flow-rail" aria-hidden="true"><span class="flow-dot"></span></span>
+          <p class="flow-note">RICE, грумминги, WIP-лимиты</p>
+        </li>
+        <li class="flow-step">
+          <p class="flow-step-title">Разработка</p>
+          <span class="flow-rail" aria-hidden="true"><span class="flow-dot"></span></span>
+          <p class="flow-note">декомпозиция и снятие зависимостей</p>
+        </li>
+        <li class="flow-step">
+          <p class="flow-step-title">Тестирование</p>
+          <span class="flow-rail" aria-hidden="true"><span class="flow-dot"></span></span>
+          <p class="flow-note">качество как метрика потока</p>
+        </li>
+        <li class="flow-step">
+          <p class="flow-step-title">Релиз</p>
+          <span class="flow-rail" aria-hidden="true"><span class="flow-dot"></span></span>
+          <p class="flow-note">релизные поезда и прогноз дат</p>
+        </li>
+      </ol>
+    </section>
 
-      <div class="projects-grid">
-        <div class="project-card">
-          <div>
-            <h4>Local AI Agent</h4>
-            <p>Разработка локального агента на Python и LLM API для автоматизации рутинных аналитических и продуктовых задач.</p>
-          </div>
-          <div class="tag-cloud">
-            <span class="tag">Python</span>
-            <span class="tag">LLM API</span>
-          </div>
-        </div>
+    <section class="wrap section" id="experience" aria-labelledby="experience-title">
+      <h2 class="section-title" id="experience-title">Опыт</h2>
 
-        <div class="project-card">
-          <div>
-            <h4>Orchestrator Agent</h4>
-            <p>Создание агента-оркестратора на базе OpenRouter для динамической маршрутизации запросов между несколькими LLM.</p>
-          </div>
-          <div class="tag-cloud">
-            <span class="tag">OpenRouter</span>
-            <span class="tag">Architecture</span>
-          </div>
-        </div>
+      <ol class="timeline">
 
-        <div class="project-card">
-          <div>
-            <h4>Chrome Extension + FastAPI</h4>
-            <p>Спроектировал и реализовал расширение для браузера с бэкендом на FastAPI для суммаризации веб-страниц с Claude и Gemini.</p>
+        <li class="job">
+          <div class="job-when">2025—2026</div>
+          <div class="job-body">
+            <h3>Delivery Manager, <span class="job-co">Yota</span></h3>
+            <p class="job-lead">
+              Веб-стрим на Kanban и мобильная разработка. Команда 15+ человек: 2 frontend,
+              2 backend, 4 QA, аналитик, 2 автотеста, 3 iOS, 3 Android. Совмещал роли
+              Delivery Manager и Product Owner: единый бэклог мобильной разработки,
+              пул релизов в сторы, график релизных поездов.
+            </p>
+            <dl class="results">
+              <div>
+                <dt>−20%</dt>
+                <dd>Cycle Time: WIP-лимиты на разработке и тестировании, регулярные грумминги, снятие межкомандных зависимостей.</dd>
+              </div>
+              <div>
+                <dt class="is-accent">−89,8%</dt>
+                <dd>критических ошибок в вебе, −70% на Android и −83% на iOS после перехода на новую платформу: рефакторинг запуска, работа с токенами, исправление JS Bridge.</dd>
+              </div>
+              <div>
+                <dt>100 тыс.+</dt>
+                <dd>MAU функции переводов в Личном кабинете за первый месяц; многомиллионный оборот и кратный рост комиссионной выручки.</dd>
+              </div>
+              <div>
+                <dt>68,7%</dt>
+                <dd>конверсия сценария «Досписание»; новый способ оплаты выбирали в 10 раз чаще, чем СБП.</dd>
+              </div>
+              <div>
+                <dt>+28,7 п.п.</dt>
+                <dd>CSI «Оплата и переводы» до 66,6%: онбординг в формате Stories и триггерные опросы вместе с дизайном.</dd>
+              </div>
+              <div>
+                <dt>+16 п.п.</dt>
+                <dd>CSI «Качество приложения» до 47,3%.</dd>
+              </div>
+              <div>
+                <dt>60 тыс.+</dt>
+                <dd>пользователей у онлайн-переоформления номера: разгрузка розничных точек и сотни транзакций в месяц в онлайне.</dd>
+              </div>
+            </dl>
+            <p class="job-extra">
+              Встроил обязательную регистрацию IMEI для нерезидентов в сценарии активации SIM
+              и первого входа. Настроил проактивное информирование о сбоях внешних систем —
+              пиковая нагрузка на поддержку снизилась.
+            </p>
           </div>
-          <div class="tag-cloud">
-            <span class="tag">FastAPI</span>
-            <span class="tag">Chrome Ext</span>
+        </li>
+
+        <li class="job">
+          <div class="job-when">2023—2025</div>
+          <div class="job-body">
+            <h3>Product Owner, <span class="job-co">Fix Price</span></h3>
+            <p class="job-lead">
+              Сайт и мобильное приложение маркетплейса: 50+ проектов полного цикла.
+              Scrum-команда: бизнес- и системные аналитики, frontend/backend, тестирование.
+            </p>
+            <dl class="results">
+              <div>
+                <dt>+33%</dt>
+                <dd>CR в целевое действие и +20% CSAT после запуска умного поиска на сайте и в приложениях.</dd>
+              </div>
+              <div>
+                <dt>−40%</dt>
+                <dd>time-to-market: «Конструктор страниц» дал бизнесу автономность в работе с контентом.</dd>
+              </div>
+              <div>
+                <dt>−35%</dt>
+                <dd>затраты на SMS-авторизацию за счёт входа через внешние экосистемы.</dd>
+              </div>
+              <div>
+                <dt>−15%</dt>
+                <dd>трудозатрат разработки на технических проектах по рефакторингу.</dd>
+              </div>
+            </dl>
+            <p class="job-extra">
+              Приоритизировал инициативы по RICE с учётом бюджета и ресурсов, защищал
+              Gantt-планы перед руководством, проверял гипотезы через A/B-тесты.
+            </p>
           </div>
+        </li>
+
+        <li class="job">
+          <div class="job-when">2021—2023</div>
+          <div class="job-body">
+            <h3>Project Manager, <span class="job-co">Апиценна</span></h3>
+            <p class="job-lead">
+              Медицина и фармацевтика, промышленное оборудование. Требования, подрядчики,
+              приёмка по итерациям.
+            </p>
+            <ul class="plain-list">
+              <li>Внедрил IT-систему корпоративного университета: собрал требования и выстроил взаимодействие бизнеса с подрядчиками.</li>
+              <li>Квалифицировал и валидировал IT-системы и лабораторное оборудование.</li>
+              <li>Спроектировал систему защиты данных.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job job-compact">
+          <div class="job-when">2018—2021</div>
+          <div class="job-body">
+            <h3>Разработка и инженерия, <span class="job-co">Юнитесс, Элерон, ПАКС</span></h3>
+            <ul class="plain-list">
+              <li><strong>Юнитесс</strong>, разработчик: автоматизация поверки и калибровки на low-code-платформе, драйверы приборов на C#. Сократил время калибровки на 25%.</li>
+              <li><strong>Элерон</strong>, разработчик C: передача данных и управление микроконтроллерами MSP-430 через USB.</li>
+              <li><strong>ПАКС</strong>, инженер-конструктор: 50+ чертежей бортовой кабельной системы, скрипты автоматизации в E3.Series.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <section class="wrap section" id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title" id="skills-title">Навыки</h2>
+      <dl class="spec">
+        <div>
+          <dt>Доставка</dt>
+          <dd>Kanban, Scrum, WIP-лимиты, релизные поезда, метрики потока, прогнозируемость</dd>
         </div>
+        <div>
+          <dt>Продукт</dt>
+          <dd>Discovery, A/B-тесты, RICE, CJM, MVP, user story</dd>
+        </div>
+        <div>
+          <dt>Данные</dt>
+          <dd>SQL, Яндекс.Метрика, AppMetrica, продуктовые метрики</dd>
+        </div>
+        <div>
+          <dt>Инструменты</dt>
+          <dd>Jira, Confluence, Figma, Git, CI/CD</dd>
+        </div>
+        <div>
+          <dt>Техническая база</dt>
+          <dd>REST API, Swagger, UML, BPMN, Python</dd>
+        </div>
+        <div>
+          <dt>AI в работе</dt>
+          <dd>Claude, Gemini, CrewAI, OpenRouter, FastAPI, prompt engineering</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="wrap section" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Пет-проекты</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Agile AI System Architect</h3>
+          <p>Мобильный клиент на Kotlin и FastAPI-бэкенд с мультиагентной системой на CrewAI: по сырым бизнес-требованиям собирает архитектуру и карту рисков.</p>
+          <p class="project-stack">Kotlin, Jetpack Compose, MVVM, FastAPI, CrewAI</p>
+        </article>
+        <article class="project">
+          <h3>Суммаризация страниц</h3>
+          <p>Chrome-расширение с бэкендом на FastAPI: пересказ веб-страниц через Claude и Gemini в реальном времени.</p>
+          <p class="project-stack">FastAPI, Chrome Extensions, Claude, Gemini</p>
+        </article>
+        <article class="project">
+          <h3>Агент-оркестратор</h3>
+          <p>Динамическая маршрутизация запросов между LLM-моделями через OpenRouter API.</p>
+          <p class="project-stack">Python, OpenRouter</p>
+        </article>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="contact-box">
-        <h2>Давайте создавать ценность вместе.</h2>
-        <p>Открыт к предложениям на позиции Product Owner / Product Manager.</p>
-        <div class="contact-actions">
-          <a href="https://t.me/MihaniusVanillaBear" target="_blank" class="btn btn-primary">
-            <i class="fa-brands fa-telegram"></i> Telegram: @MihaniusVanillaBear
-          </a>
-          <a href="mailto:mike5997@yandex.ru" class="btn btn-secondary">
-            <i class="fa-regular fa-envelope"></i> mike5997@yandex.ru
-          </a>
-        </div>
+    <section class="wrap section" id="education" aria-labelledby="education-title">
+      <h2 class="section-title" id="education-title">Образование</h2>
+      <ul class="plain-list education">
+        <li><strong>Магистр, НИУ МЭИ</strong> — ИЭТЭ, электроника и автоматика, 2020.</li>
+        <li><strong>«Системный аналитик: расширенный курс», Нетология</strong> — 2025: SQL, Git, Swagger, REST API, UML, BPMN, Python.</li>
+        <li><strong>«Эффективный руководитель», CID</strong> — 2024: управление проектами.</li>
+      </ul>
+    </section>
+
+    <section class="wrap contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Открыт к ролям Delivery Manager и Product Owner</h2>
+      <p>Москва, готов к редким командировкам. Отвечаю в Telegram быстрее всего.</p>
+      <div class="contact-links">
+        <a class="action" href="https://t.me/MihaniusVanillaBear" target="_blank" rel="noopener">Telegram</a>
+        <a class="action action-quiet" href="mailto:mike5997@yandex.ru">mike5997@yandex.ru</a>
+        <a class="action action-quiet" href="tel:+79629342455">+7 962 934-24-55</a>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Михаил Ульяненков. Crafted with precision.</p>
+    <div class="wrap footer-inner">
+      <span>© 2026 Михаил Ульяненков</span>
+      <a href="https://github.com/MihaniusVanillaBear" target="_blank" rel="noopener">GitHub</a>
     </div>
   </footer>
 

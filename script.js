@@ -1,84 +1,46 @@
-document.addEventListener('DOMContentLoaded', () => {
-  
-  // 1. Появление карточек при скролле (Fade & Slide Up)
-  const observerOptions = {
-    threshold: 0.15
-  };
+// Подсветка текущего раздела в навигации.
+// Ничего не анимирует и не блокирует прокрутку.
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        
-        // Если в видимую область попали метрики — запускаем анимацию цифр
-        if (entry.target.classList.contains('stat-card')) {
-          animateCounter(entry.target);
-        }
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  if (!links.length) return;
+
+  var targets = links
+    .map(function (link) {
+      return { link: link, section: document.querySelector(link.getAttribute('href')) };
+    })
+    .filter(function (item) {
+      return item.section;
+    });
+
+  if (!targets.length) return;
+
+  var ticking = false;
+
+  function update() {
+    var threshold = 140;
+    var current = null;
+
+    targets.forEach(function (item) {
+      if (item.section.getBoundingClientRect().top <= threshold) {
+        current = item;
       }
     });
-  }, observerOptions);
 
-  document.querySelectorAll('.stat-card, .exp-card, .skill-card, .project-card, .contact-box').forEach(el => {
-    el.classList.add('reveal-on-scroll');
-    observer.observe(el);
-  });
+    targets.forEach(function (item) {
+      item.link.classList.toggle('is-current', item === current);
+    });
 
-  // 2. Анимация счетчиков для ключевых метрик
-  function animateCounter(card) {
-    const numEl = card.querySelector('.stat-number');
-    if (!numEl || numEl.dataset.animated) return;
-    numEl.dataset.animated = "true";
-
-    const text = numEl.innerText;
-    const match = text.match(/([\d\.]+)/);
-    
-    if (match) {
-      const targetNum = parseFloat(match[1]);
-      const prefix = text.split(match[1])[0];
-      const suffix = text.split(match[1])[1];
-      let currentNum = 0;
-      const duration = 1200; // 1.2 секунды
-      const stepTime = 20;
-      const steps = duration / stepTime;
-      const increment = targetNum / steps;
-
-      const timer = setInterval(() => {
-        currentNum += increment;
-        if (currentNum >= targetNum) {
-          currentNum = targetNum;
-          clearInterval(timer);
-        }
-        numEl.innerText = `${prefix}${currentNum.toFixed(targetNum % 1 !== 0 ? 1 : 0)}${suffix}`;
-      }, stepTime);
-    }
+    ticking = false;
   }
 
-  // 3. Эффект Spotlight (Мягкое свечение карточек при наведении мыши)
-  document.querySelectorAll('.exp-card, .skill-card, .project-card, .stat-card').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      card.style.setProperty('--mouse-x', `${x}px`);
-      card.style.setProperty('--mouse-y', `${y}px`);
-    });
-  });
-
-  // 4. Мягкий 3D Tilt эффект для фото
-  const photo = document.querySelector('.hero-photo-wrapper');
-  if (photo) {
-    photo.addEventListener('mousemove', (e) => {
-      const rect = photo.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-
-      photo.style.transform = `perspective(1000px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) scale3d(1.02, 1.02, 1.02)`;
-    });
-
-    photo.addEventListener('mouseleave', () => {
-      photo.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)';
-    });
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
   }
-});
 
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+})();
